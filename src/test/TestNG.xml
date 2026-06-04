@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+
+    <test name="Login Tests">
+        <classes>
+            <class name="Tests.SixFlagsTest"/>
+        </classes>
+    </test>
+
+</suite>
