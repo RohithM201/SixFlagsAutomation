@@ -1,6 +1,7 @@
 package Libraries;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -14,6 +15,8 @@ public class Browser extends CommonFunctions implements UI {
         switch (browser)
         {
             case "chrome":
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless=new");
                 driver = new ChromeDriver();
                 break;
 
@@ -36,6 +39,7 @@ public class Browser extends CommonFunctions implements UI {
         }
 
         driver.get(link);
+        System.out.println("Loaded page: " + driver.getTitle() + " - " + driver.getCurrentUrl());
 
 
     }
