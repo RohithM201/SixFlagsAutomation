@@ -96,7 +96,7 @@ public class SixFlagsMagicMountain extends CommonFunctions {
         switchToFrameContaining(continuteBtn2);
         clickWait(continuteBtn2);
 
-//       clickWait(insurance);
+//       clickWait(insurance)
 //       clickWait(noInsurance);
 //       clickWait(insurance);
 //       clickWait(continueBtn);
