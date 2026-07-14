@@ -40,9 +40,9 @@ public class SixFlagsMagicMountain extends CommonFunctions {
     By singleMeal = By.xpath("//*[@id='application-view']/div/div/div/div[2]/package-display[1]/ng-include/div/gap-card/gap-card-content/div/div[2]/quantity/gap-quantity/button[2]");
     By allDayDining = By.xpath("//*[@id='application-view']/div/div/div/div[2]/package-display[2]/ng-include/div/gap-card/gap-card-content/div/div[2]/quantity/gap-quantity/button[2]");
     By photoPackage = By.xpath("//*[@id='application-view']/div/div/div/div[2]/package-display[3]/ng-include/div/gap-card/gap-card-content/div/div[2]/quantity/gap-quantity/button[2]");
-    By addToCart2 = By.xpath("//*[@id='application-view']/div/div/div/div[3]/gap-button[3]");
-    By checkBox1 = By.xpath("//*[@id='cart-view']/div[2]/div[2]/cart-summary/gap-card/gap-card-content[2]/div/div[2]/gap-checkbox");
-    By checkBox2 = By.xpath("//*[@id='cart-view']/div[2]/div[2]/cart-summary/gap-card/gap-card-content[2]/cart-optins/div[2]/gap-checkbox");
+    By addToCart2 = By.xpath("//*[contains(@id,'application-view')]/div/div/div/div[3]/gap-button");
+    By checkBox1 = By.xpath("//*[@id='cart-view']/div[2]/div[2]/cart-summary/gap-card/gap-card-content[2]/div/div[2]/gap-checkbox/gap-iconography");
+    By checkBox2 = By.xpath("//*[@id='cart-view']/div[2]/div[2]/cart-summary/gap-card/gap-card-content[2]/cart-optins/div[2]/gap-checkbox/gap-iconography");
     By cartItemPrices = By.xpath("//div[contains(@class,'cart-item__pricing-price')]");
     By checkoutTotal = By.xpath("(//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'total')]/following::*[contains(text(),'$')])[1]");
     By checkOutBtn = By.xpath("//*[@id='cart-view']//gap-button[contains(normalize-space(.), 'Checkout') or contains(normalize-space(.), 'Check Out')]");
@@ -93,7 +93,7 @@ public class SixFlagsMagicMountain extends CommonFunctions {
        clickWait(checkBox1);
        clickWait(checkBox2);
        clickWait(checkOutBtn);
-        switchToFrameContaining(continuteBtn2);
+       switchToFrameContaining(continuteBtn2);
         clickWait(continuteBtn2);
 
 //       clickWait(insurance)
